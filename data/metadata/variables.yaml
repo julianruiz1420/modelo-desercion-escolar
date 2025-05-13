@@ -1,0 +1,218 @@
+# Diccionario de datos - Estadísticas educativas por departamento (Colombia)
+dataset:
+  nombre: "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR_BASICA_Y_MEDIA_POR_DEPARTAMENTO"
+  descripcion: "Datos anuales de matrícula, cobertura y deserción escolar por departamento"
+  periodo: "2011-2021"
+  fuente: "Ministerio de Educación Nacional de Colombia"
+
+variables:
+  - nombre: "AÑO"
+    tipo: "int"
+    descripcion: "Año de registro de los datos"
+    rango: "2011-2021"
+    ejemplo: 2023
+
+  - nombre: "CODIGO_DEPARTAMENTO"
+    tipo: "int"
+    descripcion: "Código único del departamento (DANE)"
+    ejemplo: 99 # Antioquia
+
+  - nombre: "DEPARTAMENTO"
+    tipo: "string"
+    descripcion: "Nombre oficial del departamento"
+    ejemplo: "Antioquia"
+
+  - nombre: "POBLACION_5_16"
+    tipo: "int"
+    descripcion: "Población estimada entre 5 y 16 años"
+    unidad: "personas"
+    ejemplo: 1479334
+
+  - nombre: "TASA_MATRICULACION_5_16"
+    tipo: "float"
+    descripcion: "Porcentaje de población en edad escolar matriculada"
+    unidad: "porcentaje"
+    rango: "0-100"
+    ejemplo: 103.94
+
+  - nombre: "COBERTURA_NETA"
+    tipo: "float"
+    descripcion: "Relación entre matrícula oficial y población en edad escolar"
+    ejemplo: 103.88
+
+  - nombre: "COBERTURA_NETA_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en transición que tienen la edad teórica para cursar este nivel (5 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%."
+    ejemplo: 83.52
+
+  - nombre: "COBERTURA_NETA_PRIMARIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en primaria que tienen la edad teórica para cursar este nivel (6 a 10 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%."
+    ejemplo: 102.10
+
+  - nombre: "COBERTURA_NETA_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en secundaria que tienen la edad teórica para cursar este nivel (11 a 14 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%."
+    ejemplo: 91.09
+
+  - nombre: "COBERTURA_NETA_MEDIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en media que tienen la edad teórica para cursar este nivel (15 a 16 años) y el total de la población correspondiente a esa misma edad. Cuando las proyecciones de población del DANE no capturan adecuadamente los flujos migratorios internos, puede alcanzar valores mayores al 100%."
+    ejemplo: 64.42
+
+  - nombre: "COBERTURA_BRUTA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en transición, primaria, secundaria y media respecto a la población en edad teórica para cursar estos niveles (5 a 16 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar educación preescolar, básica y media (5 a 16 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%."
+    ejemplo: 123.04
+    
+  - nombre: "COBERTURA_NETACOBERTURA_BRUTA_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en transición respecto a la población en edad teórica para cursar este nivel (5 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (5 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%."
+    ejemplo: 144.97
+
+  - nombre: "COBERTURA_BRUTA_PRIMARIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en primaria respecto a la población en edad teórica para cursar este nivel (6 a 10 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (6 a 10 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%"
+    ejemplo: 150.84
+    
+  - nombre: "COBERTURA_BRUTA_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en secundaria respecto a la población en edad teórica para cursar este nivel (11 a 14 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (11 a 14 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%."
+    ejemplo: 126.23
+    
+  - nombre: "COBERTURA_BRUTA_MEDIA"
+    tipo: "float"
+    descripcion: "Es la relación entre el número de estudiantes matriculados en media respecto a la población en edad teórica para cursar este nivel (15 a 16 años). En algunos casos la demanda social es mayor a la población en edad teórica para cursar este nivel (15 a 16 años), explicada por estudiantes en extraedad, por lo que el indicador toma valores superiores al 100%."
+    ejemplo: 107.30
+
+  - nombre: "TAMAÑO_PROMEDIO_DE_GRUPO"
+    tipo: "float"
+    descripcion: "Corresponde al número promedio de estudiantes por grupo. Para su cálculo considera la matrícula y el número de grupos tanto del sector oficial como del no oficial"
+    ejemplo: 32237
+
+  - nombre: "SEDES_CONECTADAS_A_INTERNET"
+    tipo: "float"
+    descripcion: "Porcentaje de instituciones educativas con acceso a internet"
+    ejemplo: 100
+    
+  - nombre: "DESERCION"
+    tipo: "float"
+    descripcion: "Tasa de abandono escolar anual"
+    ejemplo: 10.94
+
+  - nombre: "DESERCIÓN_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Tasa de deserción intra - anual del sector oficial en transición. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo."
+    ejemplo: 20.84
+    
+  - nombre: "DESERCIÓN_PRIMARIA"
+    tipo: "float"
+    descripcion: "Tasa de deserción intra - anual del sector oficial en primaria. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo."
+    ejemplo: 10.73
+
+  - nombre: "DESERCIÓN_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Tasa de deserción intra - anual del sector oficial en secundaria. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo."
+    ejemplo: 13.18
+
+  - nombre: "DESERCIÓN_MEDIA"
+    tipo: "float"
+    descripcion: "Tasa de deserción intra - anual del sector oficial en media. Identifica la proporción de alumnos matriculados que por factores culturales, coyunturales o de prestación del servicio educativo, abandonan sus estudios durante el año lectivo."
+    ejemplo: 29.89
+
+  - nombre: "APROBACIÓN"
+    tipo: "float"
+    descripcion: "Tasa de aprobación de estudiantes del sector oficial. Identifica el porcentaje de alumnos en educación preescolar, básica y media que aprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 99.08
+
+  - nombre: "APROBACIÓN_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Tasa de aprobación de estudiantes del sector oficial en transición. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 13.13
+
+  - nombre: "APROBACIÓN_PRIMARIA"
+    tipo: "float"
+    descripcion: "Tasa de aprobación de estudiantes del sector oficial en primaria. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 99.06
+
+  - nombre: "APROBACIÓN_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Tasa de aprobación de estudiantes del sector oficial en secundaria. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 13.18
+
+  - nombre: "APROBACIÓN_MEDIA"
+    tipo: "float"
+    descripcion: "Tasa de aprobación de estudiantes del sector oficial en media. Identifica el porcentaje de alumnos en este nivel educativo que aprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 99.49
+
+  - nombre: "REPROBACIÓN"
+    tipo: "float"
+    descripcion: "Tasa de reprobación de estudiantes del sector oficial. Identifica el porcentaje de alumnos en educación preescolar, básica y media que reprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 19.32
+
+  - nombre: "REPROBACIÓN_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Tasa de reprobación de estudiantes del sector oficial en transición. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 17.01
+
+  - nombre: "REPROBACIÓN_PRIMARIA"
+    tipo: "float"
+    descripcion: "Tasa de reprobación de estudiantes del sector oficial en primaria. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 99.06
+    
+  - nombre: "REPROBACIÓN_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Tasa de reprobación de estudiantes del sector oficial en secundaria. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 24.57
+
+  - nombre: "REPROBACIÓN_MEDIA"
+    tipo: "float"
+    descripcion: "Tasa de reprobación de estudiantes del sector oficial en media. Identifica el porcentaje de alumnos en este nivel educativo que reprueba de acuerdo con los planes y programas de estudio vigentes."
+    ejemplo: 17.91
+
+  - nombre: "REPITENCIA"
+    tipo: "float"
+    descripcion: "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en un año escolar en transición, primaria, secundaria y media que se encuentran repitiendo el mismo grado cursado el año anterior."
+    ejemplo: 17.37
+
+  - nombre: "REPITENCIA_TRANSICIÓN"
+    tipo: "float"
+    descripcion: "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en transición que se encuentran repitiendo el mismo grado cursado el año anterior."
+    ejemplo: 17.01
+
+  - nombre: "REPITENCIA_PRIMARIA"
+    tipo: "float"
+    descripcion: "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en primaria que se encuentran repitiendo el mismo grado cursado el año anterior."
+    ejemplo: 22.77
+
+  - nombre: "REPITENCIA_SECUNDARIA"
+    tipo: "float"
+    descripcion: "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en secundaria que se encuentran repitiendo el mismo grado cursado el año anterior"
+    ejemplo: 25.22
+
+  - nombre: "REPITENCIA_MEDIA"
+    tipo: "float"
+    descripcion: "Tasa de repitencia del sector oficial. Corresponde al porcentaje de alumnos matriculados en media que se encuentran repitiendo el mismo grado cursado el año anterior."
+    ejemplo: 16.39
+    
+
+secciones_especiales:
+  - nombre: "Cobertura por niveles"
+    variables:
+      - "COBERTURA_NETA_TRANSICION"
+      - "COBERTURA_NETA_PRIMARIA"
+      - "COBERTURA_NETA_SECUNDARIA"
+      - "COBERTURA_NETA_MEDIA"
+    nota: "Todos valores en porcentaje (0-100)"
+
+  - nombre: "Indicadores de calidad"
+    variables:
+      - "APROBACION"
+      - "REPROBACION"
+      - "REPITENCIA"
+    nota: "Miden desempeño académico por nivel educativo"
+
+contacto:
+  responsable: "Tu nombre o equipo"
+  fecha_actualizacion: "2023-11-20"
+  version: "1.0"
