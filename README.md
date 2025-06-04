@@ -19,6 +19,7 @@ Target variable (objetivo):
 
 DESERCIÓN, DESERCIÓN_TRANSICIÓN, DESERCIÓN_PRIMARIA, DESERCIÓN_SECUNDARIA, DESERCIÓN_MEDIA
 
+
 Variables predictoras:
 
 AÑO, DEPARTAMENTO
